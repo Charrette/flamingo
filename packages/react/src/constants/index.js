@@ -40,3 +40,9 @@ export const INTENTS = {
   SECONDARY: "secondary",
   TERTIARY: "tertiary",
 };
+
+export const INLINE_ALERT_TYPES = {
+  INFORMATION: "information",
+  SUCCESS: "success",
+  ERROR: "error",
+};
