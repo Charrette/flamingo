@@ -46,3 +46,9 @@ export const INLINE_ALERT_TYPES = {
   SUCCESS: "success",
   ERROR: "error",
 };
+
+export const LIST_ITEM_TYPES = {
+  NORMAL: "normal",
+  SUB: "sub",
+  MINI: "mini",
+};
