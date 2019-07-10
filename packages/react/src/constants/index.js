@@ -47,7 +47,7 @@ export const INLINE_ALERT_TYPES = {
   ERROR: "error",
 };
 
-export const LIST_ITEM_TYPES = {
+export const LIST_ITEM_SIZES = {
   NORMAL: "normal",
   SUB: "sub",
   MINI: "mini",
