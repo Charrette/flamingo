@@ -46,15 +46,19 @@ stories.add("With intents", () => (
 ));
 
 stories.add("With icons", () => (
-  <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
-    <Button>
-      Success <Icon icon={ICONS.IconCheck} />
-    </Button>
+  <>
+    <div style={{ width: "100%", textAlign: "center" }}>
+      <Button>
+        Success <Icon icon={ICONS.IconCheck} />
+      </Button>
+    </div>
 
-    <Button>
-      Nope <Icon icon={ICONS.IconClose} />
-    </Button>
-  </div>
+    <div style={{ width: "100%", textAlign: "center" }}>
+      <Button>
+        Nope <Icon icon={ICONS.IconClose} />
+      </Button>
+    </div>
+  </>
 ));
 
 stories.add("As link", () => (
