@@ -2,14 +2,17 @@
 @import "./shared/global.css";
 @import "./shared/helpers.css";
 
+/* core */
 @import "./components/Button.css";
-@import "./components/FileUploader.css";
 @import "./components/Form-el.css";
 @import "./components/Heading.css";
-@import "./components/Helper.css";
 @import "./components/Icon.css";
 @import "./components/Input.css";
 @import "./components/Label.css";
-@import "./components/Select.css";
 @import "./components/Text.css";
+
+/* rest */
+@import "./components/Helper.css";
+@import "./components/FileUploader.css";
+@import "./components/Select.css";
 @import "./components/Textarea.css";
