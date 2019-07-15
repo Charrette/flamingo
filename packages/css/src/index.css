@@ -14,5 +14,6 @@
 /* rest */
 @import "./components/Helper.css";
 @import "./components/FileUploader.css";
+@import "./components/ImageUploader.css";
 @import "./components/Select.css";
 @import "./components/Textarea.css";
