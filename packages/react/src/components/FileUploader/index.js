@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Icon from "../Icon";
+import Spinner from "../Spinner";
 import Text from "../Text";
 
 import { ICONS } from "../../constants";
@@ -19,11 +20,11 @@ const texts = {
   },
   error: {
     id: "flamingo-file-uploader-error-title",
-    defaultText: "An error just happened",
+    defaultText: "Upload failed",
   },
   try_again: {
     id: "flamingo-file-uploader-error-try-again",
-    defaultText: "Please try again",
+    defaultText: "Click here to try again",
   },
 };
 
@@ -48,19 +49,25 @@ const FileUploader = ({
         className="FileUploader-state FileUploader-state--empty"
         htmlFor={name}
       >
-        <Icon icon={ICONS.IconAdd} />
+        <Icon icon={ICONS.IconFilePlus} />
         <Text>{translate(texts.add_document)}</Text>
       </label>
     )}
 
     {state === STATES.LOADING && (
       <div className="FileUploader-state FileUploader-state--uploading">
+        <Spinner />
         <Text>{translate(texts.uploading)}</Text>
       </div>
     )}
 
     {state === STATES.ERRORED && (
-      <div className="FileUploader-state FileUploader-state--error">
+      <label
+        className="FileUploader-state FileUploader-state--error"
+        htmlFor={name}
+      >
+        <Icon icon={ICONS.IconSadFace} />
+
         <Text className="FileUploader-errorState-title">
           {translate(texts.error)}
         </Text>
@@ -68,16 +75,14 @@ const FileUploader = ({
         <Text className="FileUploader-errorState-tryAgain">
           {translate(texts.try_again)}
         </Text>
-      </div>
+      </label>
     )}
 
     {state === STATES.SUCCESS && (
       <div className="FileUploader-state FileUploader-state--success">
-        <Text>Success state, wait for Juanito for more details</Text>
+        {children}
       </div>
     )}
-
-    {children}
 
     <div className="FileUploader-inputContainer">
       <input type="file" id={name} name={name} onChange={onChange} />

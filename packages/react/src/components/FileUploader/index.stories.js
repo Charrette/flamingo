@@ -15,11 +15,9 @@ stories.addDecorator(withKnobs);
 
 stories.add("With states", () =>
   Object.values(STATES).map(state => (
-    <FileUploader
-      onChange={onChange}
-      state={state}
-      name={`inputName-${state}`}
-    />
+    <FileUploader onChange={onChange} state={state} name={`inputName-${state}`}>
+      {state === STATES.SUCCESS && "Success, do something"}
+    </FileUploader>
   ))
 );
 

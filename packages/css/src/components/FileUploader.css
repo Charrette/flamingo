@@ -26,13 +26,21 @@
   text-align: center;
 }
 
-.FileUploader-errorState-title {
-  font-weight: var(--font-weight--bold);
-  color: var(--color-bittersweet);
+.FileUploader-state .Text {
+  font-size: var(--font-size--s);
+  margin: 0;
 }
 
+.FileUploader-state--empty .Icon,
+.FileUploader-state--uploading .Icon,
+.FileUploader-state--error .Icon {
+  margin-bottom: var(--space-s);
+}
+
+.FileUploader-state--empty .Icon,
+.FileUploader-state--empty .Text,
 .FileUploader-errorState-tryAgain {
-  font-size: var(--font-size--s);
+  color: var(--color-rose);
 }
 
 .FileUploader-inputContainer {

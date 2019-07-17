@@ -68,7 +68,7 @@ const ImageUploader = ({ onChange, ...props }) => {
             }}
           />
           <div className="ImageUploader-hoverState">
-            <IconButton onClick={handleResetState} icon={ICONS.IconArrowDown} />
+            <IconButton onClick={handleResetState} icon={ICONS.IconTrash} />
           </div>
         </>
       )}
