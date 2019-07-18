@@ -9,7 +9,7 @@ Flamingo is Heetch's design system
 It's available as React component library and standalone CSS
 
 ## Packages
-
+pwet
 Every package is available through NPM
 
 - [![npm](https://img.shields.io/npm/v/@heetch/flamingo-react.svg?label=@heetch/flamingo-react)](https://www.npmjs.com/package/@heetch/flamingo-react)
